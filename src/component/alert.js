@@ -1,4 +1,4 @@
-import './alert.css';
+import './component_style.css';
 import './alert.js';
 import React , {Component} from "react";
 // import ReactDOM  from "react-dom";
