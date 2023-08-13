@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Bootbtn from './component/bootstrap_btn';
+import DataFetch from './component/div-data-fetch/data_fetch';
 
 // function App() {
 //   return (
@@ -26,6 +27,7 @@ import Bootbtn from './component/bootstrap_btn';
 function App(){
   return <div>
     <Bootbtn text = "View More" type = "secondary"/>
+    <DataFetch />
   </div>
 }
 
