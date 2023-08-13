@@ -1,34 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-import Bootbtn from './component/bootstrap_btn';
-import DataFetch from './component/div-data-fetch/data_fetch';
+import "./App.css";
+import Bootbtn from "./component/bootstrap_btn";
+import CustomInput from "./component/custom-input/custom-input";
+import { useState } from "react";
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+function App() {
+  const [state, setState] = useState("");
+  const onChangeCustomInput = (text) => {
+    setState(text);
+  };
 
-function App(){
-  return <div>
-    <Bootbtn text = "View More" type = "secondary"/>
-    <DataFetch />
-  </div>
+  return (
+    <div>
+      {/* <Bootbtn text = "View More" type = "secondary"/> */}
+      <CustomInput
+        type="text"
+        placeholder="test"
+        onChange={onChangeCustomInput}
+      />
+      <p>value from custom input is: {state}</p>
+    </div>
+  );
 }
 
 export default App;
