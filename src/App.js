@@ -25,7 +25,9 @@ function App() {
   };
   return (
     <div>
-      <CustomButton type="primary" title="read more" />
+      <CustomButton type="primary" title="read more" 
+      // beforeIcon = {<NextIcon/>}
+      />
     </div>
   );
 }
